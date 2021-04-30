@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h> 
+#include <sys/type>
+#include <unistd.h> 
+
+
+int main()
+{
+pid_t pid;
+pid = fork();
+
+if (fork()!=0){
+  printf("i am the father %d\n");
+}
+else{
+   printf(i am the child %d\n")
+}
+ if(fork!=0){
+  printf("i am the father %d\n");
+  else{
+  printf("i an the child %d\n");
+  }
+return 0
+}
