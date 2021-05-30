@@ -33,7 +33,6 @@ int main(void) {
             printf("\t\t п2 PID :: %i\n",getpid());
             printf("\t\t п2 parent PID :: %i\n",getppid());
             pid2 = fork();
-            pid3 = fork();
 
             if ( pid2 < 0 ) {
                 return 1;
@@ -43,6 +42,7 @@ int main(void) {
                 printf("\t\t\tп3 start\n");
                 printf("\t\t\t п3 PID :: %i\n",getpid());
                 printf("\t\t\t п3 parent PID :: %i\n",getppid());
+                pid3 = fork();
                 return 0;
             }
             
