@@ -11,10 +11,10 @@
 #include <thread>
 
 struct thread_primitives {
-    pthread_mutex_t mbrk = PTHREAD_MUTEX_INITIALIZER;
-    pthread_mutex_t brre = PTHREAD_MUTEX_INITIALIZER;
-    pthread_cond_t raliya = PTHREAD_COND_INITIALIZER;
-    pthread_cond_t qalbiuroon = PTHREAD_COND_INITIALIZER;
+    pthread_mutex_t mbrk_sharedvariablemutex  = PTHREAD_MUTEX_INITIALIZER;
+    pthread_mutex_t brre_producermutex = PTHREAD_MUTEX_INITIALIZER;
+    pthread_cond_t raliya_valueproducedcondition = PTHREAD_COND_INITIALIZER;
+    pthread_cond_t qalbiuroon_valueconsumedcondition = PTHREAD_COND_INITIALIZER;
 };
 
 __thread int partial_sum = 0;
@@ -48,22 +48,22 @@ void* producer_routine(void* arg) {
 
     int N;
     while (ss >> N) {
-        pthread_mutex_lock(&primitives.mbrk);
+        pthread_mutex_lock(&primitives.mbrk_sharedvariablemutex);
         *shared_variable_pointer = n;
-        pthread_cond_signal(&primitives.raliya);
-        pthread_mutex_unlock(&primitives.mbrk);
+        pthread_cond_signal(&primitives.raliya_valueproducedcondition);
+        pthread_mutex_unlock(&primitives.mbrk_sharedvariablemutex);
 
-        pthread_mutex_lock(&primitives.brre);    
+        pthread_mutex_lock(&primitives.brre_producermutex);    
         while (*shared_variable_pointer != 0) {
-            pthread_cond_wait(&primitives.qalbiuroon, &primitives.brre);
+            pthread_cond_wait(&primitives.qalbiuroon_valueconsumedcondition, &primitives.brre_producermutex);
         }
-        pthread_mutex_unlock(&primitives.brre);
+        pthread_mutex_unlock(&primitives.brre_producermutex);
     }
 
-    pthread_mutex_lock(&primitives.mbrk);
+    pthread_mutex_lock(&primitives.mbrk_sharedvariablemutex);
     is_running = false;
-    pthread_cond_broadcast(&primitives.raliya);
-    pthread_mutex_unlock(&primitives.mbrk);
+    pthread_cond_broadcast(&primitives.raliya_valueproducedcondition);
+    pthread_mutex_unlock(&primitives.mbrk_sharedvariablemutex);
 
     return nullptr;
 }
@@ -77,20 +77,20 @@ void* consumer_routine(void* arg) {
     // return pointer to result (for particular consumer)
     int* shared_variable_pointer = static_cast<int*>(arg);
     while (is_running) {
-        pthread_mutex_lock(&primitives.mbrk);
+        pthread_mutex_lock(&primitives.mbrk_sharedvariablemutex);
 
         while (is_running && *shared_variable_pointer == 0) {
-            pthread_cond_wait(&primitives.raliya, &primitives.mbrk);
+            pthread_cond_wait(&primitives.raliya, &primitives.mbrk_sharedvariablemutex);
         }
 
         partial_sum += *shared_variable_pointer;
         *shared_variable_pointer = 0;
 
-        pthread_mutex_lock(&primitives.brre);
-        pthread_cond_signal(&primitives.qalbiuroon);
-        pthread_mutex_unlock(&primitives.brre);
+        pthread_mutex_lock(&primitives.brre_producermutex);
+        pthread_cond_signal(&primitives.qalbiuroon_valueconsumedcondition);
+        pthread_mutex_unlock(&primitives.brre_producermutex);
 
-        pthread_mutex_unlock(&primitives.mbrk);
+        pthread_mutex_unlock(&primitives.mbrk_sharedvariablemutex);
 
         std::this_thread::sleep_for(std::chrono::milliseconds(get_random_integer(0, consumer_sleep_upper_limit)));
     }
