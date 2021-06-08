@@ -9,7 +9,7 @@
 |Chubchik Alexander    | Chuppy101     |5    |-    |-    |-    |
 |Chen Yongyu           | yongyuchen    |5    |-    |-    |-    |
 |Bushra Ahmad          | BushraAhmad   |5    |-    |-    |-    |
-|Shahrukh Sultan       | Shahsul       |-    |-    |-    |-    |
+|Shahrukh Sultan       | Shahsul       |5    |-    |-    |-    |
 |titus-eze             | nelstein      |5    |-    |-    |-    |
 |Jeff Lusweti          | Jeff-Lusweti  |-    |-    |-    |-    |
 |Ryleev Vladislav      | wiggum        |-    |-    |-    |-    |
