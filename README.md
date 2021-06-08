@@ -5,14 +5,13 @@
 |Studemts Name         | Github account| HW1 | HW2 | HW3 | Exam|
 |:---------------------|:--------------|:----|:----|:----|:----|
 |Naveen Sheoran        | naveenpardeep |5    |5 (code)    |5 (code)    |5    |
-|Moubarek Barre Hassan | MOUBAREK1998  |5    |-    |-    |-    |
-|Chubchik Alexander    | Chuppy101     |5    |-    |-    |-    |
-|Chen Yongyu           | yongyuchen    |5    |-    |-    |-    |
+|Moubarek Barre Hassan | MOUBAREK1998  |5    |5 (code)    |-    |-    |
+|Chubchik Alexander    | Chuppy101     |5    |5 (code)    |-    |-    |
+|Chen Yongyu           | yongyuchen    |5    |5 (code)    |5 (code)    |5    |
 |Bushra Ahmad          | BushraAhmad   |5    |5 (code)   | 5 (report)    |5    |
-|Shahrukh Sultan       | Shahsul       |5    |5 (code)    |-    |-    |
+|Shahrukh Sultan       | Shahsul       |5    |5 (code)    |5 (report)    |5    |
 |titus-eze             | nelstein      |5    |-    |-    |-    |
-|Jeff Lusweti          | Jeff-Lusweti  |-    |-    |-    |-    |
-|Ryleev Vladislav      | wiggum        |5    |-    |-    |-    |
+|Ryleev Vladislav      | wiggum        |5    |5 (code)    |-    |-    |
 |Said Faycal           | saidfaycal    |5    |-    |-    |-    |
 |Al-Haykani Mujtaba Nazar Kadim| mujtaba193    |5    |5 (code)    | 5(report)    |5    |
 
