@@ -10,6 +10,6 @@
 |Chen Yongyu           | yongyuchen    |5    |-    |-    |-    |
 |Bushra Ahmad          | BushraAhmad   |5    |-    |-    |-    |
 |Shahrukh Sultan       | Shahsul       |-    |-    |-    |-    |
-|Nelson Eze            | nelstein      |-    |-    |-    |-    |
+|titus-eze             | nelstein      |5    |-    |-    |-    |
 |Jeff Lusweti          | Jeff-Lusweti  |-    |-    |-    |-    |
 |Ryleev Vladislav      | wiggum        |-    |-    |-    |-    |
