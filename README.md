@@ -13,3 +13,4 @@
 |titus-eze             | nelstein      |5    |-    |-    |-    |
 |Jeff Lusweti          | Jeff-Lusweti  |-    |-    |-    |-    |
 |Ryleev Vladislav      | wiggum        |-    |-    |-    |-    |
+|Said Faycal           | saidfaycal    |5    |-    |-    |-    |
