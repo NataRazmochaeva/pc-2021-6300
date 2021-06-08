@@ -8,7 +8,7 @@
 |Moubarek Barre Hassan | MOUBAREK1998  |5    |-    |-    |-    |
 |Chubchik Alexander    | Chuppy101     |5    |-    |-    |-    |
 |Chen Yongyu           | yongyuchen    |5    |-    |-    |-    |
-|Bushra Ahmad          | BushraAhmad   |5    |5 (code)   | 5 (report)    |-    |
+|Bushra Ahmad          | BushraAhmad   |5    |5 (code)   | 5 (report)    |5    |
 |Shahrukh Sultan       | Shahsul       |5    |-    |-    |-    |
 |titus-eze             | nelstein      |5    |-    |-    |-    |
 |Jeff Lusweti          | Jeff-Lusweti  |-    |-    |-    |-    |
