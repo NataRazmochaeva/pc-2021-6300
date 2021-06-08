@@ -9,10 +9,10 @@
 |Chubchik Alexander    | Chuppy101     |5    |-    |-    |-    |
 |Chen Yongyu           | yongyuchen    |5    |-    |-    |-    |
 |Bushra Ahmad          | BushraAhmad   |5    |5 (code)   | 5 (report)    |5    |
-|Shahrukh Sultan       | Shahsul       |5    |-    |-    |-    |
+|Shahrukh Sultan       | Shahsul       |5    |5 (code)    |-    |-    |
 |titus-eze             | nelstein      |5    |-    |-    |-    |
 |Jeff Lusweti          | Jeff-Lusweti  |-    |-    |-    |-    |
 |Ryleev Vladislav      | wiggum        |5    |-    |-    |-    |
 |Said Faycal           | saidfaycal    |5    |-    |-    |-    |
-|Al-Haykani Mujtaba Nazar Kadim| mujtaba193    |5    |-    |-    |-    |
+|Al-Haykani Mujtaba Nazar Kadim| mujtaba193    |5    |5 (code)    | 5(report)    |5    |
 
