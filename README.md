@@ -15,5 +15,5 @@
 |Said Faycal           | saidfaycal    |5    |_PR available_   |_PR available_   |4 (_is consistent_)    |
 |Al-Haykani Mujtaba Nazar Kadim| mujtaba193    |5    |5 (code)    | 5(report)    |4 (agreed)    |
 |Gameni Cyriac Orley|  cyriaque01 |_PR available_   | **no PR**   | **no PR**    | 4 (_is consistent_)    |
-|Wafubwa Jeffrey Lusweti| Jeff-Lusweti | _PR available_   |_PR available_   |_PR available_    | 4 (_is consistent_)    |
+|Wafubwa Jeffrey Lusweti| Jeff-Lusweti | done   |done  |done    | 5  |
 
